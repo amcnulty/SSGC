@@ -25,18 +25,15 @@ body {
     text-align: center;
 }
 
-#headerLogo img {
+#companyLogo {
     height: 100%;
-}
-
-#headerLogo img:hover {
     cursor: pointer;
 }
 
 #headerLogo a {
     position: relative;
     top: -50%;
-    left: 30px;
+    left: 15px;
     font-size: 1.2em;
 }
 
@@ -107,7 +104,7 @@ body {
 
 #contactUs {
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(215, 215, 215, 1)), to(rgba(0, 82, 165, .5)));
     background-image: -webkit-linear-gradient(top, rgba(215, 215, 215, 1), rgba(0, 82, 165, .5));
     background-image: -moz-linear-gradient(top, rgba(215, 215, 215, 1), rgba(0, 82, 165, .5));
@@ -129,17 +126,27 @@ body {
 }
 
 #contactLeft {
-    width: 25%;
+    width: 33.33%;
     height: 480px;
     float: left;
 }
 
 #CLinner {
-    width: 95%;
+    width: 98%;
     height: 100%;
-    border-right: 2px ridge whitesmoke;
     text-align: center;
     font-size: 1.2em;
+}
+
+#CL {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 80px;
+    -moz-box-shadow: 3px 3px 5px 6px #222222;
+    -webkit-box-shadow: 3px 3px 5px 6px #222222;
+    box-shadow: 3px 3px 5px 6px #222222;
 }
 
 #CLinner h3 {
@@ -149,34 +156,86 @@ body {
 }
 
 #contactRight {
-    width: 75%;
-    height: 480px;
+    width: 66.66%;
+    height: 600px;
     float: left;
 }
 
-form {
+#mailListWrapper {
+    width: 25%;
+    height: 40%;
+    float: left;
+}
+
+#mailList {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    top: 130px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    -moz-box-shadow: 3px 3px 5px 7px #222222;
+    -webkit-box-shadow: 3px 3px 5px 7px #222222;
+    box-shadow: 3px 3px 5px 7px #222222;
+}
+
+#mailListForm {
+    position: relative;
     width: 100%;
     height: 100%;
+    top: 20px;
+    color: whitesmoke;
+}
+
+#mailListForm label {
+    color: black;
+    font-size: 1.2em;
+}
+
+#listEmailField {
+    width: 80%;
+    font-size: 1.1em;
+}
+
+#formWrapper {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+#emailForm {
+    position: relative;
+    width: 100%;
+    height: 95%;
+    left: 20px;
+    top: 30px;
     text-align: center;
     font-size: 1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -moz-box-shadow: 3px 3px 5px 6px #222222;
+    -webkit-box-shadow: 3px 3px 5px 6px #222222;
+    box-shadow: 3px 3px 5px 6px #222222;
 }
 
-form p {
+#emailForm p {
     margin: 0px;
 }
 
+#emailForm h2 {
+    color: whitesmoke;
+}
+
 .inputField {
-    width: 50%;
+    width: 80%;
     font-size: 1.1em;
 }
 
 textarea {
-    width: 50%;
+    width: 80%;
     height: 100px;
 }
 
-#submitBut {
+.submitBut {
     width: 100px;
     height: 50px;
     font-weight: bold;
@@ -189,7 +248,7 @@ textarea {
     border-radius: 5px;
 }
 
-#submitBut:hover {
+.submitBut:hover {
     color: whitesmoke;
     background-color: navy;
 }

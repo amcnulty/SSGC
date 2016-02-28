@@ -8,6 +8,7 @@
                  home construction and remodeling, hardscapes, deck and patio builds, lawn maintenance, and much more.">
         <meta name="author" content="Aaron Michael McNulty">
         <link rel="stylesheet" type="text/css" href="style/index.css">
+        <script language="JavaScript" src="script/gen_validatorv31.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="header">
@@ -37,31 +38,50 @@
             </div>
             <div id="contactLeft">
                 <div id="CLinner">
-                    <br><br>
-                    <h3>Email</h3><br>
-                    <a href="mailto:starsandstripesgc@gmail.com">starsandstripesgc@gmail.com</a><br><br>
-                    <h3>Phone Number</h3><br>
-                    <a href="tel:9132195521">913-219-5521</a><br><br>
-                    <h3>Twitter</h3><br>
-                    <a href="https://twitter.com/StarsStripesGC">@starsstripesgc</a>
+                    <div id="CL">
+                        <br><br>
+                        <h3>Email</h3><br>
+                        <a href="mailto:starsandstripesgc@gmail.com">starsandstripesgc@gmail.com</a><br><br>
+                        <h3>Phone Number</h3><br>
+                        <a href="tel:9132195521">913-219-5521</a><br><br>
+                        <h3>Twitter</h3><br>
+                        <a href="https://twitter.com/StarsStripesGC">@starsstripesgc</a>
+                    </div>
                 </div>
             </div>
             <div id="contactRight">
-                <form method="post" name="myemailform" action="form-to-email.php">
-                    <p>
-                        <label for='name'>Enter Name: </label><br><br>
-                        <input class="inputField" type="text" name="name" placeholder="You Name"><br><br>
-                    </p>
-                    <p>
-                        <label for='email'>Enter Email Address:</label><br><br>
-                        <input class="inputField" type="text" name="email" placeholder="Your Email"><br><br>
-                    </p>
-                    <p>
-                        <label for='message'>Enter Message:</label> <br><br>
-                        <textarea name="message" placeholder="Your Message"></textarea>
-                    </p>
-                    <input id="submitBut" type="submit" name='submit' value="SUBMIT">
-                </form>
+                <div id="mailListWrapper">
+                    <div id="mailList">
+                        <form id="mailListForm" method="post" name="mailListForm" action="mailList.php">
+                            <h2>Mailing List</h2>
+                            <p>
+                                <label for="listEmail">Email:</label><br><br>
+                                <input id="listEmailField" type="text" name="listEmail" placeholder="Your Email">
+                            </p>
+                            <p>
+                                <input class="submitBut" type="submit" name="listSubmitButton" value="SUBMIT">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div id="formWrapper">
+                    <form id="emailForm" method="post" name="myemailform" action="form-to-email.php">
+                        <p>
+                            <br><h2>Send Us A Message</h2>
+                            <label for='name'>Enter Name: </label><br><br>
+                            <input class="inputField" type="text" name="name" placeholder="You Name"><br><br>
+                        </p>
+                        <p>
+                            <label for='email'>Enter Email Address:</label><br><br>
+                            <input class="inputField" type="text" name="email" placeholder="Your Email"><br><br>
+                        </p>
+                        <p>
+                            <label for='message'>Enter Message:</label> <br><br>
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </p>
+                        <input class="submitBut" type="submit" name='submit' value="SUBMIT">
+                    </form>
+                </div>
                 <script language="JavaScript">
                     var frmvalidator  = new Validator("myemailform");
                     frmvalidator.addValidation("name","req","Please provide your name"); 
@@ -90,6 +110,5 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script type="text/javascript" src="script/index.js"></script>
-        <script language="JavaScript" src="script/gen_validatorv31.js" type="text/javascript"></script>
     </body>
 </html>
