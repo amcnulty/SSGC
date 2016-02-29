@@ -49,7 +49,7 @@ body {
     top: 0px;
     left: 0px;
     background-color: white;
-    z-index: 2;
+    z-index: 6;
     -webkit-transition: all 1.2s ease;
     -moz-transition: all 1.2s ease;
     -ms-transition: all 1.2s ease;
@@ -129,13 +129,59 @@ body {
     transition: all .2s ease;
 }
 
+#construction {
+    font-size: .8em;
+}
+
+#backToTopButton {
+    cursor: pointer;
+    position: fixed;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    line-height: 60px;
+    border: 4px solid black;
+    border-radius: 50%;
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+
+#backToTopButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.backToTopButton {
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.backToTopButton-visible {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 1;
+    z-index: 6;
+}
+
 #landing {
     width: 100%;
     height: 1350px;
-    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#0052A5));*/
-    /*background-image: -webkit-linear-gradient(top, #FFFFFF, #0052A5);*/
-    /*background-image: -moz-linear-gradient(top, #FFFFFF, #0052A5);*/
-    /*background-image: linear-gradient(to bottom, #FFFFFF, #0052A5);*/
     background: url("../res/background/turbine.jpeg") center center no-repeat;
     background-size: cover;
 }
@@ -228,12 +274,166 @@ body {
     color: #E0162B;
 }
 
+#paperSection {
+    position: relative;
+    width: 100%;
+    height: 642px;
+}
+
+#landscapePaper {
+    position: absolute;
+    display: inline-block;
+    width: 350px;
+    height: 520px;
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-525px);
+    -moz-transform: translateX(-525px);
+    -ms-transform: translateX(-525px);
+    -o-transform: translateX(-525px);
+    transform: translateX(-525px);
+    background: url("../res/background/paper1.jpg") center center no-repeat;
+    z-index: 2;
+    cursor: -webkit-grab;
+    -webkit-box-shadow: 3px 3px 5px 7px #222222;
+    -moz-box-shadow: 3px 3px 5px 7px #222222;
+    -ms-box-shadow: 3px 3px 5px 7px #222222;
+    -o-box-shadow: 3px 3px 5px 7px #222222;
+    box-shadow: 3px 3px 5px 7px #222222;
+}
+
+#LPheader {
+    margin-left: 30px;
+    width: 60%;
+    cursor: default;
+}
+
+#LPdescription {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    cursor: default;
+}
+
+#LPimageWrapper {
+    text-align: center;
+}
+
+#LPimage {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    width: 95%;
+    cursor: default;
+}
+
+#constructionPaper {
+    position: absolute;
+    display: inline-block;
+    width: 350px;
+    height: 520px;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-175px);
+    -moz-transform: translateX(-175px);
+    -ms-transform: translateX(-175px);
+    -o-transform: translateX(-175px);
+    transform: translateX(-175px);
+    background: url("../res/background/paper2.jpg") center center no-repeat;
+    z-index: 1;
+    cursor: -webkit-grab;
+    -webkit-box-shadow: 3px 3px 5px 7px #222222;
+    -moz-box-shadow: 3px 3px 5px 7px #222222;
+    -ms-box-shadow: 3px 3px 5px 7px #222222;
+    -o-box-shadow: 3px 3px 5px 7px #222222;
+    box-shadow: 3px 3px 5px 7px #222222;
+}
+
+#CPheader {
+    margin-left: 30px;
+    width: 60%;
+    cursor: default;
+}
+
+#CPdescription {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    cursor: default;
+}
+
+#CPimageWrapper {
+    text-align: center;
+}
+
+#CPimage {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    width: 95%;
+    cursor: default;
+}
+
+#lawnPaper {
+    position: absolute;
+    display: inline-block;
+    width: 350px;
+    height: 520px;
+    top: 70px;
+    left: 50%;
+    -webkit-transform: translateX(175px);
+    -moz-transform: translateX(175px);
+    -ms-transform: translateX(175px);
+    -o-transform: translateX(175px);
+    transform: translateX(175px);
+    background: url("../res/background/paper3.jpg") center center no-repeat;
+    z-index: 0;
+    cursor: -webkit-grab;
+    -webkit-box-shadow: 3px 3px 5px 7px #222222;
+    -moz-box-shadow: 3px 3px 5px 7px #222222;
+    -ms-box-shadow: 3px 3px 5px 7px #222222;
+    -o-box-shadow: 3px 3px 5px 7px #222222;
+    box-shadow: 3px 3px 5px 7px #222222;
+}
+
+#lawnheader {
+    margin-left: 30px;
+    width: 60%;
+    cursor: default;
+}
+
+#lawndescription {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    cursor: default;
+}
+
+#lawnimageWrapper {
+    text-align: center;
+}
+
+#lawnimage {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    width: 95%;
+    cursor: default;
+}
+
 #landscapeSection {
+    position: relative;
     width: 100%;
     height: 500px;
+    z-index: 3;
+    background-color: white;
 }
 
 #LStitle {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -273,6 +473,7 @@ body {
 }
 
 #CStitle {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -284,7 +485,7 @@ body {
     width: 50%;
     height: 342px;
     float: left;
-    background: url("../res/background/spring.jpeg") center center no-repeat;
+    background: url("../res/image/slider/patio2.jpg") center center no-repeat;
 }
 
 #CSright {
@@ -319,6 +520,7 @@ body {
 }
 
 #Ltitle {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -330,7 +532,7 @@ body {
     width: 50%;
     height: 342px;
     float: left;
-    background: url("../res/background/spring.jpeg") center center no-repeat;
+    background: url("../res/image/slider/mower.jpg") center center no-repeat;
 }
 
 #Lright {
@@ -359,4 +561,96 @@ body {
     width: 100%;
     height: 600px;
     background-color: #1F2022;
+}
+
+#footerLeft {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#footerRight {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#mailList {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 20%;
+    border: 1px solid #515254;
+    text-align: center;
+}
+
+#mailList h1 {
+    color: #515254;
+}
+
+#formEmail {
+    width: 80%;
+    font-size: 1.5em;
+    color: #8EA9A9;
+    background-color: #2f2f2f;
+    border: none;
+    outline: none;
+}
+
+#submitBut {
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#copyrightWrapper {
+    width: 100%;
+    height: 20%;
+    line-height: 60px;
+    border-bottom: 1px solid #515254;
+}
+
+#copyright {
+    color: grey;
+    margin-bottom: 0px;
+}
+
+#copyrightWrapper p {
+    margin: 0px;
+    color: grey;
+    font-size: 1.2em;
+}
+
+#copyrightWrapper a{
+    color: lightblue;
+}
+
+#copyrightWrapper a:hover {
+    color: gold;
+}
+
+#footerButtons {
+    width: 100%;
+    height: 70%;
+}
+
+.footerBut {
+    width: 150px;
+    height: 40px;
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.footerBut a {
+    text-decoration: none;
+    color: #8EA9A9;
+}
+
+.footerBut a:hover {
+    color: white;
 }
