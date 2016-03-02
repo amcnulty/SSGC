@@ -13,6 +13,10 @@ window.onload = function() {
         top = $("#lawnPaper").css("top");
         lawnStyleLeft = parseInt(left);
         lawnStyleTop = parseInt(top);
+        if (iOS) {
+            LPstyleLeft = 500;
+            CstyleLeft = 482;
+        }
     }
     
     function setPaperLocations() {
@@ -76,7 +80,9 @@ window.onload = function() {
             $navButtons[i].className = "navButton-scroll unselectable";
         }
         $nav[0].className = "scroll";
-        headerImage.src = "res/logo/companyStar.png";
+        if (!iOS && !isAndroid) {
+            headerImage.src = "res/logo/companyStar.png";
+        }
         $headerImageDiv.className = "headerImageDiv-scroll";
     }
     
@@ -194,7 +200,6 @@ window.onload = function() {
                 CstyleTop += e.movementY;
                 break;
             case "lawnPaper":
-                console.log(lawnStyleLeft);
                 lawnStyleLeft += e.movementX;
                 lawnStyleTop += e.movementY;
                 break;
@@ -226,6 +231,8 @@ window.onload = function() {
     var lawnStyleLeft;
     var lawnStyleTop;
     var lastElementToMove = "landscapePaper";
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    var isAndroid = /Android/.test(navigator.userAgent) && !window.MSStream;
     
     //      EVENT LISTENERS
     window.addEventListener("scroll", scroll, false);

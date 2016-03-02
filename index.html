@@ -4,17 +4,19 @@
         <link rel="icon" type="image/x-icon" href="res/icon/favicon.ico">
         <title>Stars and Stripes General Contracting | Kansas City Landscaping, Construction, and Lawn Care</title>
         <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">-->
         <meta name="description" content="Stars and Stripes General Contracting is a Kansas City based construction and landscaping company. Our services include landscaping,
                  special building projects, hardscapes, deck and patio builds, lawn maintenance, and much more.">
         <meta name="author" content="Aaron Michael McNulty">
         <meta http-equiv="content-language" content="en">
-        <link rel="stylesheet" type="text/css" href="style/index.css">
+        <link rel="stylesheet" type="text/css" href="style/index.css" media="only all and (min-width: 1280px)">
+        <link rel="stylesheet" type="text/css" href="style/homeMobile.css" media="only all and (min-width: 768px) and (max-width: 1280px)">
         <script language="JavaScript" src="script/gen_validatorv31.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="header">
             <div id="headerTop">
-                <img src="res/logo/companyName1.png" alt="Stars and Stripes">
+                <img id="companyName1" alt="Stars and Stripes">
             </div>
             <div id="headerBottom">
                 <nav class="top">
@@ -42,7 +44,7 @@
                 </nav>
             </div>
         </div>
-        <div class="backToTopButton" id="backToTopButton">
+        <div class="backToTopButton unselectable" id="backToTopButton">
             &#10094
         </div>
         <div id="landing">
@@ -67,6 +69,8 @@
                 </div>
             </div>
             <div id="paperSection">
+                <div id="easterEgg">
+                </div>
                 <div class="paper" id="landscapePaper">
                     <img class="unselectable" id="LPheader" src="res/newspaperFont/landscaping.png" alt="Landscaping">
                     <p>
@@ -194,8 +198,8 @@
                     Visit our <a href="html/construction.html">construction page</a> to learn more about our building projects.
                 </p>
                 <p>
-                    If you have a building project you would like to get started please <a href="html/contactUs.html">contact us</a> to get the process started! Currently 
-                    we are only working in the greater Kansas City area and Lynn Valley, Kansas area.
+                    If you have a building project you would like to get started please <a href="html/contactUs.html">contact us</a> to get the process started! We are
+                     currently working in the greater Kansas City area and Lynn Valley, Kansas area.
                 </p>
             </div>
             <div id="CSleft">
@@ -238,7 +242,7 @@
                         &#169 Stars and Stripes General Contracting LLC 2016
                     </h3>
                     <p>
-                        Phone Number: <a href="tel:913-815-0420">913-815-0420</a>
+                        Phone Number: <a href="tel:913-815-0420">913-815-0420</a><br>
                         Our Email: <a href="mailto:starsandstripesgc@gmail.com">starsandstripesgc@gmail.com</a>
                     </p>
                 </div>
