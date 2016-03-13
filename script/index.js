@@ -65,9 +65,9 @@ window.onload = function() {
     }
     
     function scroll() {
-        if (window.scrollY > 120) reduceHeader();
+        if (window.pageYOffset > 120) reduceHeader();
         else expandHeader();
-        if (window.scrollY > 1400) backToTopButton.className = "backToTopButton-visible";
+        if (window.pageYOffset > 1400) backToTopButton.className = "backToTopButton-visible";
         else backToTopButton.className = "backToTopButton";
     }
     
@@ -80,9 +80,6 @@ window.onload = function() {
             $navButtons[i].className = "navButton-scroll unselectable";
         }
         $nav[0].className = "scroll";
-        if (!iOS && !isAndroid) {
-            headerImage.src = "res/logo/companyStar.png";
-        }
         $headerImageDiv.className = "headerImageDiv-scroll";
     }
     
@@ -91,7 +88,6 @@ window.onload = function() {
             $navButtons[i].className = "navButton";
         }
         $nav[0].className = "top";
-        headerImage.src = "res/logo/companyName2.png";
         $headerImageDiv.className = "headerImageDiv";
     }
     
@@ -125,6 +121,8 @@ window.onload = function() {
     }
     
     function mousedown(e) {
+        CX = e.clientX;
+        CY = e.clientY;
         e.target.addEventListener("mousemove", mousemove, false);
         switch (e.target.id) {
             case "landscapePaper":
@@ -192,20 +190,22 @@ window.onload = function() {
     function mousemove(e) {
         switch (e.target.id) {
             case "landscapePaper":
-                LPstyleLeft += e.movementX;
-                LPstyleTop += e.movementY;
+                LPstyleLeft += (e.clientX - CX);
+                LPstyleTop += (e.clientY - CY);
                 break;
             case "constructionPaper":
-                CstyleLeft += e.movementX;
-                CstyleTop += e.movementY;
+                CstyleLeft += (e.clientX - CX);
+                CstyleTop += (e.clientY - CY);
                 break;
             case "lawnPaper":
-                lawnStyleLeft += e.movementX;
-                lawnStyleTop += e.movementY;
+                lawnStyleLeft += (e.clientX - CX);
+                lawnStyleTop += (e.clientY - CY);
                 break;
             default:
                 break;
         }
+        CX = e.clientX;
+        CY = e.clientY;
         setPaperLocations();
     }
     
@@ -221,7 +221,6 @@ window.onload = function() {
     var $headerImageDiv = document.getElementById("companyName2");
     var $sliderImages = $("#sliderImages").children();
     var $windowWidth = $(window).width();
-    var headerImage = document.getElementById("headerImage");
     var leftArrow = document.getElementById("leftArrow");
     var playOrPause = document.getElementById("playOrPause");
     var playSlideShow = true;
@@ -237,6 +236,8 @@ window.onload = function() {
     var lawnStyleLeft;
     var lawnStyleTop;
     var lastElementToMove = "landscapePaper";
+    var CX;
+    var CY;
     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     var isAndroid = /Android/.test(navigator.userAgent) && !window.MSStream;
     

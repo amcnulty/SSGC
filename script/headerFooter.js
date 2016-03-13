@@ -1,9 +1,9 @@
 window.onload = function() {
     //      FUNCTIONS
     function scroll() {
-        if (window.scrollY > 120) reduceHeader();
+        if (window.pageYOffset > 120) reduceHeader();
         else expandHeader();
-        if (window.scrollY > 1400) backToTopButton.className = "backToTopButton-visible";
+        if (window.pageYOffset > 1400) backToTopButton.className = "backToTopButton-visible";
         else backToTopButton.className = "backToTopButton";
     }
     
@@ -16,9 +16,6 @@ window.onload = function() {
             $navButtons[i].className = "navButton-scroll unselectable";
         }
         $nav[0].className = "scroll";
-        if (!iOS && !isAndroid) {
-            headerImage.src = "res/logo/companyStar.png";
-        }
         $headerImageDiv.className = "headerImageDiv-scroll";
     }
     
@@ -27,7 +24,6 @@ window.onload = function() {
             $navButtons[i].className = "navButton";
         }
         $nav[0].className = "top";
-        headerImage.src = "res/logo/companyName2.png";
         $headerImageDiv.className = "headerImageDiv";
     }
     
@@ -41,7 +37,6 @@ window.onload = function() {
     var contactBut = document.getElementById("contactUs");
     var $nav = $(".top");
     var $headerImageDiv = document.getElementById("companyName2");
-    var headerImage = document.getElementById("headerImage");
     var backToTopButton = document.getElementById("backToTopButton");
     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     var isAndroid = /Android/.test(navigator.userAgent) && !window.MSStream;
