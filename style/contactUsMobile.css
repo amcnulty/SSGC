@@ -1,0 +1,113 @@
+#landing {
+    width: 100%;
+    height: 600px;
+    background: url("../res/background/forest.jpg") center center no-repeat;
+    background-attachment: fixed;
+}
+
+#left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#leftWrapper {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    top: 10%;
+    left: 10%;
+    background-color: rgba(5, 50, 50, .8);
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    -webkit-box-shadow: 3px 3px 3px 4px #222222;
+    -moz-box-shadow: 3px 3px 3px 4px #222222;
+    -ms-box-shadow: 3px 3px 3px 4px #222222;
+    -o-box-shadow: 3px 3px 3px 4px #222222;
+    box-shadow: 3px 3px 3px 4px #222222;
+}
+
+#left p {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.1em;
+}
+
+#left p a {
+    color: lightblue;
+}
+
+#left p a:hover {
+    color: gold;
+}
+
+
+#right {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#right form {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    -webkit-box-shadow: 3px 3px 3px 4px #222222;
+    -moz-box-shadow: 3px 3px 3px 4px #222222;
+    -ms-box-shadow: 3px 3px 3px 4px #222222;
+    -o-box-shadow: 3px 3px 3px 4px #222222;
+    box-shadow: 3px 3px 3px 4px #222222;
+    background: rgba(180, 180, 180, .6);
+}
+
+#right label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: blue;
+    font-weight: bold;
+}
+
+#right p input {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+#right textarea {
+    width: 80%;
+    height: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+#formSubmitBut {
+    width: 50%;
+    height: 40px;
+    border-bottom-left-radius: 30%;
+    border: 5px solid blue;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#formSubmitBut:hover {
+    background-color: blue;
+    color: white;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}

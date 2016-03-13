@@ -4,7 +4,7 @@ if(!isset($_POST['submit']))
 	//This page should not be accessed directly. Need to submit the form.
 	echo "error; you need to submit the form!";
 }
-$visitor_email = $_POST['email'];
+$visitor_email = $_POST['listEmail'];
 
 //Validate first
 if(empty($visitor_email)) 

@@ -211,6 +211,12 @@ window.onload = function() {
     
     //      VARIABLES
     var $navButtons = $(".navButton");
+    var homeBut = document.getElementById("home");
+    var landscapeBut = document.getElementById("landscape");
+    var constructBut = document.getElementById("construction");
+    var lawnBut = document.getElementById("lawnCare");
+    var aboutBut = document.getElementById("aboutUs");
+    var contactBut = document.getElementById("contactUs");
     var $nav = $(".top");
     var $headerImageDiv = document.getElementById("companyName2");
     var $sliderImages = $("#sliderImages").children();
@@ -235,6 +241,24 @@ window.onload = function() {
     var isAndroid = /Android/.test(navigator.userAgent) && !window.MSStream;
     
     //      EVENT LISTENERS
+    homeBut.addEventListener("click", function() {
+        window.location.href = "http://www.starsandstripesgc.com";
+    }, false);
+    landscapeBut.addEventListener("click", function() {
+        window.location.href = "../landscaping";
+    }, false);
+    constructBut.addEventListener("click", function() {
+        window.location.href = "../construction";
+    }, false);
+    lawnBut.addEventListener("click", function() {
+        window.location.href = "../lawn-care";
+    }, false);
+    aboutBut.addEventListener("click", function() {
+        window.location.href = "../about-us";
+    }, false);
+    contactBut.addEventListener("click", function() {
+        window.location.href = "../contact-us";
+    }, false);
     window.addEventListener("scroll", scroll, false);
     leftArrow.addEventListener("click", rewindSlider, false);
     playOrPause.addEventListener("click", toggleSlideShow, false);

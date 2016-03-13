@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="res/icon/favicon.ico">
+        <title>Stars and Stripes General Contracting | Contact Us 913-815-0420</title>
+        <meta name="description" content="Contact us at phone number 913-815-0420 or email us at starsandstripesgc@gmail.com. Stars and Stripes General Contracting is a Kansas City based construction and landscaping company. Our services include landscaping,
+                 special building projects, hardscapes, deck and patio builds, lawn maintenance, and much more.">
+        <meta name="author" content="Aaron Michael McNulty">
+        <meta http-equiv="content-language" content="en">
+        <link rel="stylesheet" type="text/css" href="style/contactUs.css" media="only all and (min-width: 1280px)">
+        <link rel="stylesheet" type="text/css" href="style/contactUsMobile.css" media="only all and (min-width: 768px) and (max-width: 1279px)">
+        <link rel="stylesheet" type="text/css" href="style/headerFooter.css" media="only all and (min-width: 1280px)">
+        <link rel="stylesheet" type="text/css" href="style/headerFooterMobile.css" media="only all and (min-width: 768px) and (max-width: 1279px)">
+        <script language="JavaScript" src="script/gen_validatorv31.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="headerTop">
+                <img id="companyName1" alt="Stars and Stripes">
+            </div>
+            <div id="headerBottom">
+                <nav class="top">
+                    <div class="navButton unselectable" id="home">
+                        HOME
+                    </div>
+                    <div class="navButton unselectable" id="landscape">
+                        LANDSCAPE
+                    </div>
+                    <div class="navButton unselectable" id="construction">
+                        CONSTRUCTION
+                    </div>
+                    <div class="headerImageDiv" id="companyName2">
+                        <img id="headerImage" src="res/logo/companyName2.png" alt="General Contracting">
+                    </div>
+                    <div class="navButton unselectable" id="lawnCare">
+                        LAWN CARE
+                    </div>
+                    <div class="navButton unselectable" id="aboutUs">
+                        ABOUT US
+                    </div>
+                    <div class="navButton unselectable" id="contactUs">
+                        CONTACT US
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="backToTopButton unselectable" id="backToTopButton">
+            &#10094
+        </div>
+        <div id="landing">
+            <div id="left">
+                <div id="leftWrapper">
+                    <h1>Have a Question or Need a Bid?</h1>
+                    <p>
+                        We would like to hear from you! You can send us an email right here. Please include your name, email, 
+                        and a message. We check this often and you should be contacted within 24 hours. For more immediate assistance 
+                        you can <a href="tel:9138150420">call us today!</a>
+                    </p>
+                    <p>
+                        To catch the latest news from Stars and Stripes General Contracting <a href="https://twitter.com/StarsStripesGC">check us out on Twitter!</a>
+                    </p>
+                </div>
+            </div>
+            <div id="right">
+                <form method="post" name="myemailform" action="form-to-email.php">
+                    <p>
+                        <label for='name'>Enter Name: </label><br><br>
+                        <input class="inputField" type="text" name="name" placeholder="You Name"><br><br>
+                    </p>
+                    <p>
+                        <label for='email'>Enter Email Address:</label><br><br>
+                        <input class="inputField" type="text" name="email" placeholder="Your Email"><br><br>
+                    </p>
+                    <p>
+                        <label for='message'>Enter Message:</label> <br><br>
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </p>
+                    <input id="formSubmitBut" type="submit" name='submit' value="SUBMIT">
+                </form>
+                <script language="JavaScript">
+                    var frmvalidator  = new Validator("myemailform");
+                    frmvalidator.addValidation("name","req","Please provide your name"); 
+                    frmvalidator.addValidation("email","req","Please provide your email"); 
+                    frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+                </script>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerLeft">
+                <div id="mailList">
+                    <form method="post" name="emailListForm" action="mailList.php">
+                        <label for='listEmail'><h1>JOIN OUR MAILING LIST</h1></label><br><br>
+                        <input id="formEmail" class="inputField" type="text" name="listEmail" placeholder="Your Email"><br><br><br><br>
+                        <input id="submitBut" type="submit" name='submit' value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+            <div id="footerRight">
+                <div id="copyrightWrapper">
+                    <h3 id="copyright">
+                        &#169 Stars and Stripes General Contracting LLC 2016
+                    </h3>
+                    <p>
+                        Phone Number: <a href="tel:9138150420">913-815-0420</a><br>
+                        Our Email: <a href="mailto:starsandstripesgc@gmail.com">starsandstripesgc@gmail.com</a>
+                    </p>
+                </div>
+                <div id="footerButtons">
+                    <div class="footerBut">
+                        <a href="http://www.starsandstripesgc.com">HOME</a>
+                    </div>
+                    <div class="footerBut">
+                        <a href="landscaping">LANDSCAPING</a>
+                    </div>
+                    <div class="footerBut">
+                        <a href="construction">CONSTRUCTION</a>
+                    </div>
+                    <div class="footerBut">
+                        <a href="lawn-care">LAWN CARE</a>
+                    </div>
+                    <div class="footerBut">
+                        <a href="about-us">ABOUT US</a>
+                    </div>
+                    <div class="footerBut">
+                        <a href="contact-us">CONTACT US</a>
+                    </div>
+                    <div class="footerBut">
+                        <a href="https://twitter.com/StarsStripesGC">TWITTER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="script/headerFooter.js"></script>
+    </body>
+</html>

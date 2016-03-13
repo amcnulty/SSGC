@@ -1,0 +1,280 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#header {
+    width: 100%;
+    height: 160px;
+}
+
+#headerTop {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+#companyName1 {
+    content: url("../res/logo/companyName1.png");
+}
+
+#headerBottom {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    border-bottom: 2px solid #E0162B;
+}
+
+.top {
+    width: 100%;
+    height: 80px;
+}
+
+.top img {
+    height: 60px;
+}
+
+.scroll {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    z-index: 6;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
+
+.headerImageDiv {
+    display: inline-block;
+    width: 399px;
+}
+
+.headerImageDiv-scroll {
+    display: inline-block;
+    width: 80px;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
+
+.navButton {
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    width: 120px;
+    height: 50%;
+    border: 4px solid #0052A5;
+    border-radius: 4px;
+    line-height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #0052A5;
+}
+
+.navButton:hover {
+    border: 4px solid #E0162B;
+    background-color: #E0162B;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.navButton-scroll {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    width: 120px;
+    height: 50%;
+    border: 4px solid #0052A5;
+    border-radius: 4px;
+    line-height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #0052A5;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
+
+.navButton-scroll:hover {
+    border: 4px solid #E0162B;
+    background-color: #E0162B;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#construction {
+    font-size: .8em;
+}
+
+#backToTopButton {
+    cursor: pointer;
+    position: fixed;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    line-height: 60px;
+    border: 4px solid black;
+    border-radius: 50%;
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+
+#backToTopButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.backToTopButton {
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.backToTopButton-visible {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 1;
+    z-index: 6;
+}
+
+#footer {
+    width: 100%;
+    height: 600px;
+    background-color: #1F2022;
+}
+
+#footerLeft {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#footerRight {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#mailList {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 20%;
+    border: 1px solid #515254;
+    text-align: center;
+}
+
+#mailList h1 {
+    color: #515254;
+}
+
+#formEmail {
+    width: 80%;
+    font-size: 1.5em;
+    color: #8EA9A9;
+    background-color: #2f2f2f;
+    border: none;
+    outline: none;
+}
+
+#submitBut {
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#copyrightWrapper {
+    width: 100%;
+    height: 20%;
+    line-height: 60px;
+    border-bottom: 1px solid #515254;
+}
+
+#copyright {
+    color: grey;
+    margin-bottom: 0px;
+}
+
+#copyrightWrapper p {
+    margin: 0px;
+    color: grey;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+#copyrightWrapper a{
+    color: lightblue;
+}
+
+#copyrightWrapper a:hover {
+    color: gold;
+}
+
+#footerButtons {
+    width: 100%;
+    height: 70%;
+}
+
+.footerBut {
+    width: 150px;
+    height: 40px;
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.footerBut a {
+    text-decoration: none;
+    color: #8EA9A9;
+}
+
+.footerBut a:hover {
+    color: white;
+}

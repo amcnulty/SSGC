@@ -3,9 +3,6 @@ html, body {
     padding: 0px;
 }
 
-body {
-}
-
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
