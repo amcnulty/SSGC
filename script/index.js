@@ -176,6 +176,59 @@ window.onload = function() {
         lastElementToMove = e.target.id;
     }
     
+    function touchstart(e) {
+        CX = e.pageX;
+        CY = e.pageY;
+        e.target.addEventListener("touchmove", touchmove, false);
+        switch (e.target.id) {
+            case "landscapePaper":
+                landscapePaper.style.zIndex = "2";
+                if (lastElementToMove === "lawnPaper") {
+                    lawnPaper.style.zIndex = "1";    
+                    constructionPaper.style.zIndex = "0";
+                }
+                else if (lastElementToMove === "landscapePaper") {
+                    // do nothing
+                }
+                else {
+                    constructionPaper.style.zIndex = "1";
+                    lawnPaper.style.zIndex = "0";
+                }
+                break;
+            case "constructionPaper":
+                constructionPaper.style.zIndex = "2";
+                if (lastElementToMove === "lawnPaper") {
+                    lawnPaper.style.zIndex = "1";    
+                    landscapePaper.style.zIndex = "0";
+                }
+                else if (lastElementToMove === "constructionPaper") {
+                    // do nothing
+                }
+                else {
+                    landscapePaper.style.zIndex = "1";
+                    lawnPaper.style.zIndex = "0";
+                }
+                break;
+            case "lawnPaper":
+                lawnPaper.style.zIndex = "2";
+                if (lastElementToMove === "landscapePaper") {
+                    landscapePaper.style.zIndex = "1";
+                    constructionPaper.style.zIndex = "0";    
+                }
+                else if (lastElementToMove === "lawnPaper") {
+                    // do nothing
+                }
+                else {
+                    constructionPaper.style.zIndex = "1";
+                    landscapePaper.style.zIndex = "0";
+                }
+                break;
+            default:
+                break;
+        }
+        lastElementToMove = e.target.id;
+    }
+    
     function mouseout(e) {
         mouseup(e);
     }
@@ -206,6 +259,15 @@ window.onload = function() {
         }
         CX = e.clientX;
         CY = e.clientY;
+        setPaperLocations();
+    }
+    
+    function touchmove(e) {
+        e.preventDefault();
+        CstyleLeft += (e.pageX - CX);
+        CstyleTop += (e.pageY - CY);
+        CX = e.pageX;
+        CY = e.pageY;
         setPaperLocations();
     }
     
@@ -267,6 +329,7 @@ window.onload = function() {
     backToTopButton.addEventListener("click", goToTop, false);
     landscapePaper.addEventListener("mousedown", mousedown, false);
     constructionPaper.addEventListener("mousedown", mousedown, false);
+    constructionPaper.addEventListener("touchstart", touchstart, false);;
     lawnPaper.addEventListener("mousedown", mousedown, false);
     landscapePaper.addEventListener("mouseup", mouseup, false);
     constructionPaper.addEventListener("mouseup", mouseup, false);
