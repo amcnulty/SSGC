@@ -7,10 +7,6 @@ function load() {
         downArrow.style.opacity = "1";
     }
     
-    function button(e) {
-        alert(window.pageYOffset);
-    }
-    
     function showDropdown() {
         dropDown.className = "dropDown-visible";
     }
@@ -39,12 +35,11 @@ function load() {
         if (goingDown && window.pageYOffset >= 750 && !hidden) {
             nav.className = "innerNav-scroll-hidden";
             hidden = true;
-            console.log("HIDING");
+            dropDown.className = "dropDown-hidden";
         }
         else if (!goingDown && window.pageYOffset >= 750 && lastLowPoint - window.pageYOffset >= 150 && hidden) {
             nav.className = "innerNav-scroll";
             hidden = false;
-            console.log("SHOWING");
         }
         pageScroll = window.pageYOffset;
     }
@@ -62,10 +57,9 @@ function load() {
     var pageScroll;
     var nav = document.getElementById("innerNav");
     var resMowing = document.getElementById("resMowing");
-    window.addEventListener("keypress", button, false);
-    window.addEventListener("scroll", scroll, false);
     
     //      EVENT LISTENERS
+    window.addEventListener("scroll", scroll, false);
     landscapeArticles.addEventListener("click", function() {
         console.log("Link to landscaping articles page");
         // Link to the location of the landscaping articles page

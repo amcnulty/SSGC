@@ -1,7 +1,7 @@
 window.onload = function() {
     //      FUNCTIONS
     function scroll() {
-        if (window.pageYOffset > 120) reduceHeader();
+        if (window.pageYOffset >= 80) reduceHeader();
         else expandHeader();
         if (window.pageYOffset > 1400) backToTopButton.className = "backToTopButton-visible";
         else backToTopButton.className = "backToTopButton";
