@@ -1,0 +1,172 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+#landing {
+    width: 100%;
+    height: 500px;
+    background: url("../../res/background/landscape.jpeg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#innerNav {
+    width: 100%;
+    height: 68px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+    text-align: center;
+    z-index: 2;
+}
+
+.innerNav-scroll {
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+}
+
+.innerNav-scroll-hidden {
+    position: fixed;
+    top: 0px;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+}
+
+.navBut {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: whitesmoke;
+    color: #0052A5;
+    border: 4px solid #0052A5;
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.navBut:hover {
+    border: 4px solid #E0162B;
+    background-color: #E0162B;
+    color: white;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.navBut p {
+    margin: 0px;
+}
+
+.two {
+    line-height: 30px;
+}
+
+.one {
+    position: relative;
+    line-height: 60px;
+    top: -15px;
+}
+
+#downArrow {
+    opacity: 0;
+    position: absolute;
+    bottom: -20px;
+    right: 8px;
+    -webkit-transform: rotateZ(-90deg);
+    -moz-transform: rotateZ(-90deg);
+    -ms-transform: rotateZ(-90deg);
+    -o-transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg);
+}
+
+#dropDown {
+    position: absolute;
+    width: 200px;
+    left: -4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.dropDown-hidden {
+    visibility: hidden;
+    opacity: 0;
+    top: 64px;
+    transition: opacity .1s ease-in;
+}
+
+.dropDown-visible {
+    visibility: visible;
+    opacity: 1;
+    top: 64px;
+    transition: opacity .5s ease-in;
+}
+
+.menuItem {
+    text-align: center;
+    line-height: 40px;
+    color: whitesmoke;
+    border-top: 1px dashed whitesmoke;
+    border-bottom: 1px dashed whitesmoke;
+}
+
+.menuItem:hover {
+    color: gold;
+}
+
+#resMowing {
+    widows: 100%;
+    height: 600px;
+    background-color: teal;
+}
+
+#comMowing {
+    widows: 100%;
+    height: 600px;
+    background-color: aqua;
+}
+
+#seeding {
+    widows: 100%;
+    height: 600px;
+    background-color: burlywood;
+}
+
+#renovation {
+    widows: 100%;
+    height: 600px;
+    background-color: chartreuse;
+}
+
+#articles {
+    widows: 100%;
+    height: 600px;
+    background-color: thistle;
+}
+
+#bid {
+    widows: 100%;
+    height: 600px;
+    background-color: darkorchid;
+}
