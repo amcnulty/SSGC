@@ -135,25 +135,86 @@ body, html {
     color: gold;
 }
 
-#resMowing {
+#planting {
     widows: 100%;
     height: 600px;
-    background-color: teal;
+    background-color: #00A352;
+    background: background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#00A352));
+    background-image: -webkit-linear-gradient(top, whitesmoke, #00A352);
+    background-image: -moz-linear-gradient(top, whitesmoke, #00A352);
+    background-image: linear-gradient(to bottom, whitesmoke, #00A352);
 }
 
-#comMowing {
+#plantingLeft {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#plantingLeft p {
+    margin: 0px;
+    margin-left: 50px;
+    padding-top: 50px;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#plantingList {
+    width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+#plantingList li {
+    margin-left: 50px;
+    padding-left: 50px;
+    background: url("../../res/icon/leaf.png") no-repeat;
+    line-height: 50px;
+}
+
+#PL1 {
+    position: relative;
+    left: 25px;
+}
+
+#PL2 {
+    position: relative;
+    left: 50px;
+}
+
+#PL3 {
+    position: relative;
+    left: 75px;
+}
+
+#PL4 {
+    position: relative;
+    left: 100px;
+}
+
+#PL5 {
+    position: relative;
+    left: 125px;
+}
+
+#mulching {
     widows: 100%;
     height: 600px;
     background-color: aqua;
 }
 
-#seeding {
+#drainage {
     widows: 100%;
     height: 600px;
     background-color: burlywood;
 }
 
-#renovation {
+#pruning {
     widows: 100%;
     height: 600px;
     background-color: chartreuse;

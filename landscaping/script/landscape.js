@@ -26,11 +26,11 @@ function load() {
         if (window.pageYOffset >= 580 && window.pageYOffset < 750) {
             nav.className = "innerNav-scroll";
             hidden = false;
-            resMowing.style.marginTop = "70px";
+            planting.style.marginTop = "70px";
         }
         else if (window.pageYOffset < 580) {
             nav.className = "innerNav";
-            resMowing.style.marginTop = "0px";
+            planting.style.marginTop = "0px";
         }
         if (goingDown && window.pageYOffset >= 750 && !hidden) {
             nav.className = "innerNav-scroll-hidden";
@@ -56,7 +56,7 @@ function load() {
     var hidden = false;
     var pageScroll;
     var nav = document.getElementById("innerNav");
-    var resMowing = document.getElementById("resMowing");
+    var planting = document.getElementById("planting");
     
     //      EVENT LISTENERS
     window.addEventListener("scroll", scroll, false);
