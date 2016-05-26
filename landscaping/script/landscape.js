@@ -64,22 +64,27 @@ function load() {
         }
     }
     
+    // Show is a boolean true to display error message false to hide it
+    function showErrorMessage(show) {
+        if (show) {
+            mulchErrorMessage.style.visibility = "visible";
+            calculationResults.style.visibility = "hidden";
+        }
+        else mulchErrorMessage.style.visibility = "hidden";
+    }
+    
     function calculateMulch(e) {
         // If sqft field is not a number || depth field is not a float
         if (!/^[0-9]*$/.test(parseInt(sqFeet.value)) || !/^(\-|\+)?([0-9]+(\.[0-9]+)?|Infinity)$/.test(parseFloat(depth.value))) {
-            mulchErrorMessage.style.visibility = "visible";
-            calculationResults.style.visibility = "hidden";
+            showErrorMessage(true);
         }
         else {
             if (sqFeet != null || depth != null) {
                 // This is where the calculation is done
                 displayResults();
-                mulchErrorMessage.style.visibility = "hidden";
+                showErrorMessage(false);
             }
-            else {
-                mulchErrorMessage.style.visibility = "visible";
-                calculationResults.style.visibility = "hidden";
-            }
+            else showErrorMessage(true);
         }
     }
     
@@ -88,6 +93,8 @@ function load() {
         cubic3foot.innerHTML = (parseInt(sqFeet.value) / (36 / parseFloat(depth.value)));
         cubic2foot.innerHTML = (parseInt(sqFeet.value) / (24 / parseFloat(depth.value)));
         calculationResults.style.visibility = "visible";
+        sqFeet.style.border = "";
+        depth.style.border = "";
     }
     
     //      VARIABLES
