@@ -76,8 +76,8 @@
                 <p id="downArrow">&#10094</p>
                 <!--The drop-down box for the articles button-->
                 <div class="dropDown-hidden" id="dropDown">
-                    <div class="menuItem">
-                        <p id="landscapeArticles">Landscaping Articles</p>
+                    <div id="landscapeArticles" class="menuItem">
+                        <p>Landscaping Articles</p>
                     </div>
                     <div id="constructionArticles" class="menuItem">
                         <p>Construction Articles</p>
@@ -93,6 +93,7 @@
         </nav>
         <div id="planting">
             <div id="plantingLeft">
+                <h1 id="plantingHeader">Planting</h1>
                 <p>
                     No landscape is complete without plants. With all of the different varieties of plants every design can be unique!
                 </p>
@@ -117,8 +118,52 @@
                     It is important to pick the right type of plants for your garden. Read this article about choosing the proper plants.
                 </p>
             </div>
+            <div id="plantingRight">
+                <div id="plantingImgWrapper" class="plantingImageShowing">
+                    <img alt="Plants in a landscape" src="../res/image/landscape/plants.jpg">
+                </div>
+            </div>
         </div>
         <div id="mulching">
+            <div id="mulchLeft">
+                <div id="mulchShadowBox">
+                    <h1 id="mulchTitle">Mulching</h1>
+                    <p>
+                        Mulch is very beneficial in the garden and is both organic and beautiful! 
+                        The color contrast mulch brings to the garden beds will make your landscape stand out from your lawn.
+                        Mulch comes in several different colors and materials so you can create a customized landscape. 
+                    </p>
+                    <p>
+                        Need to figure out how much mulch you will need? Try using our mulch calculator on the right as a guide.
+                        If you want to read more about mulch check out this mulch article.
+                    </p>
+                </div>
+            </div>
+            <div id="mulchRight">
+                <div id="mulchCalculatorBox">
+                    <div id="MCBheader">
+                        <h1>Mulch Calculator</h1>
+                        <p>
+                            Enter the square footage that needs to be covered and the desired depth of the mulch in inches.
+                        </p>
+                    </div>
+                    <div id="MCBform">
+                        <label class="labels" for="squareFoot">Square Feet</label>
+                        <input class="inputs" id="squareFoot" type="number"><br><br>
+                        <label class="labels" for="depth">Mulch Depth (inches)</label>
+                        <input class="inputs" id="depth" type="number" step=".1"><br><br>
+                        <input class="inputs" id="MulchCalculateButton" type="button" value="CALCULATE">
+                        <p id="errorMessage">
+                            Make sure all fields are filled out and contain only numbers.
+                        </p>
+                        <p id="calculatorResults">
+                            Cubic Yards Needed:<span class="outputs" id="cubicYardsResult">2.2</span><br><br>
+                            3 Cubic Foot Bags Needed:<span class="outputs" id="cubic3foot">18</span><br><br>
+                            2 Cubic Foot Bags Needed:<span class="outputs" id="cubic2foot">22</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="drainage">
         </div>
