@@ -448,12 +448,145 @@ html, body {
     cursor: default;
 }
 
-#landscapeSection {
+#paymentSection {
     position: relative;
+    top: -40px;
+    margin-bottom: -40px;
+    width: 100%;
+    height: 540px;
+    z-index: 3;
+}
+
+#paymentTop {
+    width: 100%;
+    height: 40px;
+    float: left;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245,245,245, 0)),rgba(245,245,245 1) color));
+    background-image: -webkit-linear-gradient(top, rgba(245,245,245, 0), rgba(245,245,245, 1));
+    background-image: -moz-linear-gradient(top, rgba(245,245,245, 0), rgba(245,245,245, 1));
+    background-image: linear-gradient(to bottom, rgba(245,245,245, 0), rgba(245,245,245, 1));
+}
+
+#paymentLeft {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: whitesmoke;
+}
+
+#PLWrapper {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+#paymentLeft h3, #paymentLeft h1 {
+    color: #0052A5;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#paymentLeft p, #paymentLeft ul {
+    color: #222222;
+    margin-left: 90px;
+    margin-right: 60px;
+}
+
+#paymentRight {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: whitesmoke;
+}
+
+#paymentRight h3, #paymentRight p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#payBoxShadow {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    box-shadow: 4px 4px 4px 4px #0052A5;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#paypalform {
+    width: 100%;
+    height: 87px;
+}
+
+#payButWrap {
+    position: relative;
+    width: 158px;
+    height: 68px;
+    left: 50%;
+    top: 10%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#payButWrap input {
+    position: absolute;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#payButWrap > input:nth-child(1) {
+    opacity: 1;
+    z-index: 2;
+}
+
+#payButWrap > input::nth-child(2) {
+    opacity: 0;
+    z-index: 1;
+}
+
+#payButWrap:hover > input:nth-child(1) {
+    opacity: 0;
+    z-index: 1;
+}
+
+#payButWrap:hover > input::nth-child(2) {
+    opacity: 1;
+    z-index: 2;
+}
+
+#anchorWrap {
+    text-align: center;
+    height: 0px;
+}
+
+#landscapeSection {
     width: 100%;
     height: 500px;
-    z-index: 3;
-    background-color: white;
+    background-color: whitesmoke;
+}
+
+#landscapeSection h1 {
+    margin: 0px;
 }
 
 #LStitle {
@@ -490,10 +623,14 @@ html, body {
 #constructionSection {
     width: 100%;
     height: 500px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#0052A5));
-    background-image: -webkit-linear-gradient(top, white, #0052A5);
-    background-image: -moz-linear-gradient(top, white, #0052A5);
-    background-image: linear-gradient(to bottom, white, #0052A5);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 245, 245, 1)), to(#0052A5));
+    background-image: -webkit-linear-gradient(top, rgba(245, 245, 245, 1), #0052A5);
+    background-image: -moz-linear-gradient(top, rgba(245, 245, 245, 1), #0052A5);
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 1), #0052A5);
+}
+
+#constructionSection h1 {
+    margin: 0px;
 }
 
 #CStitle {
@@ -537,10 +674,14 @@ html, body {
 #lawnCareSection {
     width: 100%;
     height: 500px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#E0162B));
-    background-image: -webkit-linear-gradient(top, white, #E0162B);
-    background-image: -moz-linear-gradient(top, white, #E0162B);
-    background-image: linear-gradient(to bottom, white, #E0162B);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 245, 245, 1)), to(#E0162B));
+    background-image: -webkit-linear-gradient(top, rgba(245, 245, 245, 1), #E0162B);
+    background-image: -moz-linear-gradient(top, rgba(245, 245, 245, 1), #E0162B);
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 1), #E0162B);
+}
+
+#lawnCareSection h1 {
+    margin: 0px;
 }
 
 #Ltitle {
