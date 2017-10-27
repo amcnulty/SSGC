@@ -2,7 +2,7 @@
 A site for Stars and Stripes General Contracting LLC located in Johnson County, Kansas.
 
 ## Objectives
-1. Create a site advertising Stars and Stripes General Contracting LLC.
+1. Create a site advertising Stars and Stripes General Contracting LLC and their services.
 2. Create a contact us form so users can send an email directly from the website.
 3. Create a link to paypal so users can pay their bills through the company's paypal service.
 
