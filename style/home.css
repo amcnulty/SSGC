@@ -1,0 +1,227 @@
+#landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.slideshowImg {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    animation: landingSlider 30s linear infinite 0s;
+}
+
+#img1 {
+    background: url("../res/image/slider/pool2.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#img2 {
+    background: url("../res/image/slider/patio1.jpg") center center no-repeat;
+    background-size: cover;
+    animation-delay: 6s;
+}
+
+#img3 {
+    background: url("../res/image/slider/pool1.jpg") center center no-repeat;
+    background-size: cover;
+    animation-delay: 12s;
+}
+
+#img4 {
+    background: url("../res/image/slider/patio2.jpg") center center no-repeat;
+    background-size: cover;
+    animation-delay: 18s;
+}
+
+#img5 {
+    background: url("../res/image/slider/snowCabin.jpg") center center no-repeat;
+    background-size: cover;
+    animation-delay: 24s;
+}
+
+@keyframes landingSlider {
+    0% {
+        opacity: 0
+    }
+    5% {
+        opacity: 1
+    }
+    20% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#downButton {
+    color: black;
+    position: absolute;
+    font-size: 3em;
+    bottom: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+#topFade {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#companyName {
+    position: relative;
+    margin: 0px;
+    top: 60px;
+    font-size: 2em;
+}
+
+#bottomFade {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#services {
+    color: #333333;
+}
+
+#ourServices {
+    width: 95%;
+    font-size: 1.5em;
+    margin-top: 100px;
+    margin-left: auto;
+    padding-left: 10px;
+    border-left: 4px solid #E0162B;
+}
+
+#landscapeService {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#landscapeService h1 {
+    font-size: 3em;
+}
+
+#landscapeService p {
+    font-size: 2em;
+    line-height: 1.5em;
+    width: 60%;
+}
+
+#LSlink {
+    color: #0052A5;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+#landscapingCircle {
+    position: absolute;
+    right: 120px;
+    width: 400px;
+}
+
+#constructService {
+    width: 100%;
+    background-color: #F6F6F6;
+    padding-bottom: 100px;
+}
+
+#CScontent {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+#CScontent h1 {
+    font-size: 3em;
+}
+
+#CScontent p {
+    font-size: 2em;
+    line-height: 1.5em;
+    width: 60%;
+}
+
+#CScontent a {
+    color: #0052A5;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+#constructionIcon {
+    position: absolute;
+    right: 120px;
+    width: 400px;
+}
+
+.serviceHeader {
+    text-align: left;
+}
+
+#lawnParalax {
+    width: 100%;
+    height: 600px;
+    background: url("../res/background/lawn.jpg") center center no-repeat;
+    background-attachment: fixed;
+}
+
+#lawnService {
+    width: 100%;
+    background-color: #F6F6F6;
+    padding-bottom: 100px;
+}
+
+#LScontent {
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#lawnService h1 {
+    margin: 0px;
+    font-size: 3em;
+}
+
+#lawnService p {
+    font-size: 2em;
+    line-height: 1.5em;
+    width: 60%;
+}
+
+#lawnService a {
+    color: #0052A5;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+#mowingIcon {
+    position: absolute;
+    right: 120px;
+    width: 400px;
+}

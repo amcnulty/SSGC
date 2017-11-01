@@ -1,41 +1,20 @@
-window.onload = function() {
-    //      FUNCTIONS
-    function scroll() {
-        if (window.pageYOffset >= 80) reduceHeader();
-        else expandHeader();
-        if (window.pageYOffset > 1400) backToTopButton.className = "backToTopButton-visible";
-        else backToTopButton.className = "backToTopButton";
-    }
-    
-    function goToTop() {
-        $('html, body').animate({scrollTop: 0}, 600);
-    }
-    
-    function reduceHeader() {
-        for (var i = 0; i < $navButtons.length; i++) {
-            $navButtons[i].className = "navButton-scroll unselectable";
+if (window.attachEvent) {window.attachEvent('onload', load);}
+else if (window.addEventListener) {window.addEventListener('load', load, false);}
+else {document.addEventListener('load', load, false);}
+function load() {
+    function loadTemplates(templates, loadingComplete) {
+        var count = 0;
+        for (var i = 0; i < templates.length; i++) {
+            $(templates[i]).load(templates[i].dataset.include, function() {
+                    count++;
+                    if (count == templates.length) {
+                        loadingComplete();
+                    }
+            });
         }
-        $nav[0].className = "scroll";
-        $headerImageDiv.className = "headerImageDiv-scroll";
     }
-    
-    function expandHeader() {
-        for (var i = 0; i < $navButtons.length; i++) {
-            $navButtons[i].className = "navButton";
-        }
-        $nav[0].className = "top";
-        $headerImageDiv.className = "headerImageDiv";
-    }
-    
-    //      VARIABLES
-    var $navButtons = $(".navButton");
-    var $nav = $(".top");
-    var $headerImageDiv = document.getElementById("companyName2");
-    var backToTopButton = document.getElementById("backToTopButton");
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    var isAndroid = /Android/.test(navigator.userAgent) && !window.MSStream;
-    
-    //      EVENT LISTENERS
-    window.addEventListener("scroll", scroll, false);
-    backToTopButton.addEventListener("click", goToTop, false);
+    var templates = document.querySelectorAll("[data-include]");
+    loadTemplates(templates, function() {
+        console.log("Templates Loaded");
+    })
 }

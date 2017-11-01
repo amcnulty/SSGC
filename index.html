@@ -3,359 +3,87 @@
     <head>
         <link rel="icon" type="image/x-icon" href="res/icon/favicon.ico">
         <title>Stars and Stripes General Contracting | Kansas City Landscaping, Construction, and Lawn Care</title>
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="Stars and Stripes General Contracting is a Kansas City based construction and landscaping company. Our services include landscaping,
                  special building projects, hardscapes, deck and patio builds, lawn maintenance, and much more.">
         <meta http-equiv="content-language" content="en">
         <meta charset="UTF-8">
         <meta name="author" content="Aaron Michael McNulty">
-        <link rel="stylesheet" type="text/css" href="style/index.css" media="only all and (min-width: 1280px)">
-        <link rel="stylesheet" type="text/css" href="style/homeMobile.css" media="only all and (min-width: 768px) and (max-width: 1279px)">
-        <script language="JavaScript" src="script/gen_validatorv31.js" type="text/javascript"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-87670394-1', 'auto');
-            ga('send', 'pageview');
-        </script>
+        <link rel="stylesheet" type="text/css" href="style/headerFooter.css">
+        <link rel="stylesheet" type="text/css" href="style/home.css">
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id="header">
-            <div id="headerTop">
+        <div data-include="templates/nav/header.html"></div>
+        <section id="landing">
+            <div id="backgroundImages">
+                <div id="img1" class="slideshowImg"></div>
+                <div id="img2" class="slideshowImg"></div>
+                <div id="img3" class="slideshowImg"></div>
+                <div id="img4" class="slideshowImg"></div>
+                <div id="img5" class="slideshowImg"></div>
             </div>
-            <div id="headerBottom">
-                <nav class="top">
-                    <a href="http://www.starsandstripesgc.com">
-                        <div class="navButton unselectable" id="home">
-                            HOME
-                        </div>
-                    </a>
-                    <a href="http://www.starsandstripesgc.com/landscaping/">
-                        <div class="navButton unselectable" id="landscape">
-                            LANDSCAPE
-                        </div>
-                    </a>
-                    <a href="http://www.starsandstripesgc.com/construction/">
-                        <div class="navButton unselectable" id="construction">
-                            CONSTRUCTION
-                        </div>
-                    </a>
-                    <div class="headerImageDiv" id="companyName2">
-                    </div>
-                    <a href="http://www.starsandstripesgc.com/lawn-care">
-                        <div class="navButton unselectable" id="lawnCare">
-                            LAWN CARE
-                        </div>
-                    </a>
-                    <a href="http://www.starsandstripesgc.com/about-us">
-                        <div class="navButton unselectable" id="aboutUs">
-                            ABOUT US
-                        </div>
-                    </a>
-                    <a href="http://www.starsandstripesgc.com/contact-us">
-                        <div class="navButton unselectable" id="contactUs">
-                            CONTACT US
-                        </div>
-                    </a>
-                </nav>
-            </div>
-        </div>
-        <div class="backToTopButton unselectable" id="backToTopButton">
-            &#10094
-        </div>
-        <div id="landing">
-            <div id="slider">
-                <div id="sliderImages">
-                    <div class="topImage">
-                        <img src="res/image/slider/patio1.jpg" alt="Hardscape Patio">
-                    </div>
-                    <div class="bottomImage">
-                        <img src="res/image/slider/patio2.jpg" alt="Hardscape Patio">
-                    </div>
-                    <div class="bottomImage">
-                        <img src="res/image/slider/pool1.jpg" alt="Swimming Pool">
-                    </div>
-                    <div class="bottomImage">
-                        <img src="res/image/slider/pool2.jpg" alt="Swimming Pool">
-                    </div>
-                    <div class="bottomImage">
-                        <img src="res/image/slider/snowCabin.jpg" alt="Snow Cabin">
-                    </div>
-                </div><br>
-                <div class="unselectable" id="sliderControls">
-                    <div id="leftArrow">
-                        &#10094
-                    </div>
-                    <div class="unselectable" id="playOrPause">
-                        &#9616;&#9616;
-                    </div>
-                    <div class="unselectable" id="rightArrow">
-                        &#10095
-                    </div>
-                </div>
-            </div>
-            <div id="paperSection">
-                <div id="easterEgg">
-                </div>
-                <div class="paper" id="landscapePaper">
-                    <img class="unselectable" id="LPheader" src="res/newspaperFont/landscaping.png" alt="Landscaping">
-                    <p>
-                        <ul class="unselectable" id="LPdescription">
-                            <li>
-                                Planting
-                            </li>
-                            <li>
-                                Mulching
-                            </li>
-                            <li>
-                                Leaf Removal
-                            </li>
-                            <li>
-                                Grading
-                            </li>
-                            <li>
-                                Drainage Work
-                            </li>
-                            <li>
-                                Pruning
-                            </li>
-                            <li>
-                                Weed Management
-                            </li>
-                        </ul>
-                    </p>
-                    <div id="LPimageWrapper">
-                        <img class="unselectable" id="LPimage" src="res/image/slider/patio4.jpg" alt="A Beautiful Landscape">
-                    </div>
-                </div>
-                <div class="paper" id="constructionPaper">
-                    <img class="unselectable" id="CPheader" src="res/newspaperFont/construction.png" alt="Construction">
-                    <p>
-                        <ul class="unselectable"  id="CPdescription">
-                            <li>
-                                Patios
-                            </li>
-                            <li>
-                                Walkways
-                            </li>
-                            <li>
-                                Outdoor Kitchens
-                            </li>
-                            <li>
-                                New Homes
-                            </li>
-                            <li>
-                                Remodeling
-                            </li>
-                            <li>
-                                Rock Walls
-                            </li>
-                            <li>
-                                Dry Wall
-                            </li>
-                            <li>
-                                Rock Features
-                            </li>
-                        </ul>
-                    </p>
-                    <div id="CPimageWrapper">
-                        <img class="unselectable" id="CPimage" src="res/image/slider/cabin1.jpg" alt="A completed constrcution">
-                    </div>
-                </div>
-                <div class="paper" id="lawnPaper">
-                    <img class="unselectable" id="lawnheader" src="res/newspaperFont/lawnCare.png" alt="Lawn Care">
-                    <p>
-                        <ul class="unselectable" id="lawndescription">
-                            <li>
-                                Mowing
-                            </li>
-                            <li>
-                                Core Aeration
-                            </li>
-                            <li>
-                                Verticutting
-                            </li>
-                            <li>
-                                Sodding
-                            </li>
-                            <li>
-                                Seeding
-                            </li>
-                            <li>
-                                Edge Trimming
-                            </li>
-                            <li>
-                                Fertilizing 
-                            </li>
-                            <li>
-                                Patch Work
-                            </li>
-                        </ul>
-                    </p>
-                    <div id="lawnimageWrapper">
-                        <img class="unselectable" id="lawnimage" src="res/background/lawn.jpg" alt="A well maintained lawn">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="paymentSection">
-            <div id="paymentTop">
-            </div>
-            <div id="paymentLeft">
-                <div id="PLWrapper">
-                    <h1>Pay Online!</h1>
-                    <p>
-                        You can now pay an invoice online! Try using convenient invoice payment through PayPal's payment services.
-                    </p>
-                    <h3>How Does It Work?</h3>
-                    <p>
-                        You will be redirected to PayPal to securely make a payment using your credit card or PayPal account.
-                    </p>
-                    <h3>Follow these instructions to make an invoice mayment.</h3>
-                    <ul>
-                        <li>
-                            Step one: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </li>
-                        <li>
-                            Step two: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        </li>
-                        <li>
-                            Step three: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </li>
-                        <li>
-                            Step four: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="paymentRight">
-                <div id="payBoxShadow">
-                    <h3>Invoice Payment</h3>
-                    <p>
-                        You will be redirected to PayPal to complete the payment transaction. Pay with any major credit card or with your paypal account. 
-                    </p>
-                    <form id="paypalform" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="KF4HM9VKZXEDE">
-                        <div id="payButWrap">
-                            <input id="paymentButtonBlue" type="image" src="http://www.starsandstripesgc.com/res/paypalButtons/paypalBlue.png" border="0" name="submit" alt="PAY HERE">
-                            <input id="paymentButtonRed" type="image" src="http://www.starsandstripesgc.com/res/paypalButtons/paypalRed.png" border="0" name="submit" alt="PAY HERE">
-                        </div>
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>
-                    <img id="cardImage" src="res/misc/creditCards.jpg">
+            <div id="topFade">
+                <p id="companyName">
+                    Stars and Stripes
                     <br>
-                    <div id="anchorWrap">
-                        <a href="#">Need Help?</a>
-                    </div>
-                    <br>
-                    <br>
-                </div>
+                    General Contracting
+                </p>
             </div>
-        </div>
-        <div id="landscapeSection">
-            <div id="LStitle">
-                <a href="http://www.starsandstripesgc.com/landscaping"><h1>Landscaping</h1></a>
-            </div>
-            <div id="LSleft">
-            </div>
-            <div id="LSright">
-                <p>We offer residential and commercial landscaping in the Kansas City area. Services include planting, mulching, pruning, grading,
-                     leaf removal, and weed management. View more details on our <a href="http://www.starsandstripesgc.com/landscaping">landscaping</a> page.
-                    We also offer drainage work such as french drain installation, burried drain lines, and gutter cleaning.
+            <div id="bottomFade"></div>
+            <div id="downButton">V</div>
+        </section>
+        <section id="services">
+            <p id="ourServices">
+                Our
+                <br>
+                <b>Services</b>
+            </p>
+            <div id="landscapeService">
+                <h1 class="serviceHeader">Landscaping</h1>
+                <img id="landscapingCircle" src="res/image/landscape/landscaping-services-circle.png" alt="landscaping image">
+                <p>
+                        We offer residential and commercial landscaping in the Kansas City area. Services include planting, mulching, pruning, grading, leaf removal, and weed management. View more details on our landscaping page. We also offer drainage work such as french drain installation, burried drain lines, and gutter cleaning.
                 </p>
                 <p>
-                    With spring on the way it's time to do some cleaning up in the yard. <a href="http://www.starsandstripesgc.com/contact-us">contact us</a> about how we can get your landscape looking great!
+                        With spring on the way it's time to do some cleaning up in the yard. contact us about how we can get your landscape looking great!
                 </p>
+                <a id="LSlink" href="#">Learn More &rarr;</a>
             </div>
-        </div>
-        <div id="constructionSection">
-            <div id="CStitle">
-                <a href="http://www.starsandstripesgc.com/construction"><h1>Construction</h1></a>
-            </div>
-            <div id="CSright">
-                <p>Stars and Stripes General Contacting is involved in homebuilding projects that range from simple remodeling to full home builds. 
-                    We also do outdoor hardscapes including rock walls, patios, outdoor kitchens, concrete features, and flagstone walkways. 
-                    Visit our <a href="http://www.starsandstripesgc.com/construction">construction page</a> to learn more about our building projects.
-                </p>
-                <p>
-                    If you have a building project you would like to get started please <a href="http://www.starsandstripesgc.com/contact-us">contact us</a> to get the process started! We are
-                     currently working in the greater Kansas City area and Lynn Valley, Kansas area.
-                </p>
-            </div>
-            <div id="CSleft">
-            </div>
-        </div>
-        <div id="spaceForLawn">
-        </div>
-        <div id="lawnCareSection">
-            <div id="Ltitle">
-                <a href="http://www.starsandstripesgc.com/lawn-care"><h1>Lawn Care</h1></a>
-            </div>
-            <div id="Lleft">
-            </div>
-            <div id="Lright">
-                <p>Have a yard that needs taking care of? <a href="http://www.starsandstripesgc.com/contact-us">Contact the experts</a> and we can get your turf growing like a prize lawn!
-                    Some of our lawn maintenance services include mowing, edge trimming, core aeration, verticutting, seeding, sodding, fertilizing and patch work.
-                    If you are interested in learning more about our lawn care services visit our <a href="http://www.starsandstripesgc.com/lawn-care">lawn care page</a> to get the scoop.
-                </p>
-                <p>
-                    Most lawns in Kansas City are growing fast from all of the rain we have been getting paired with the perfect growing temperature for seed. This also means 
-                    weeds need to be controled.
-                </p>
-            </div>
-        </div>
-        <div id="spaceForFooter">
-        </div>
-        <div id="footer">
-            <div id="footerLeft">
-                <div id="mailList">
-                    <form method="post" name="myemailform" action="mailList.php">
-                        <label for='listEmail'><h1>JOIN OUR MAILING LIST</h1></label><br><br>
-                        <input id="formEmail" class="inputField" type="text" name="listEmail" placeholder="Your Email"><br><br><br><br>
-                        <input id="submitBut" type="submit" name='submit' value="SUBMIT">
-                    </form>
-                </div>
-            </div>
-            <div id="footerRight">
-                <div id="copyrightWrapper">
-                    <h3 id="copyright">
-                        &#169 Stars and Stripes General Contracting LLC 2016
-                    </h3>
+            <div id="constructService">
+                <div id="CScontent">
+                    <h1 class="serviceHeader">Construction</h1>
+                    <img id="constructionIcon" src="res/image/construction/construct-icon.png" alt="constructionIcon">
                     <p>
-                        Phone Number: <a href="tel:9138150420">913-815-0420</a><br>
-                        Our Email: <a href="mailto:starsandstripesgc@gmail.com">starsandstripesgc@gmail.com</a>
+                            Stars and Stripes General Contacting is involved in homebuilding projects that range from simple remodeling to full home builds. We also do outdoor hardscapes including rock walls, patios, outdoor kitchens, concrete features, and flagstone walkways. Visit our construction page to learn more about our building projects.
                     </p>
-                </div>
-                <div id="footerButtons">
-                    <div class="footerBut">
-                        <a href="http://www.starsandstripesgc.com">HOME</a>
-                    </div>
-                    <div class="footerBut">
-                        <a href="http://www.starsandstripesgc.com/landscaping/">LANDSCAPING</a>
-                    </div>
-                    <div class="footerBut">
-                        <a href="http://www.starsandstripesgc.com/construction/">CONSTRUCTION</a>
-                    </div>
-                    <div class="footerBut">
-                        <a href="http://www.starsandstripesgc.com/lawn-care">LAWN CARE</a>
-                    </div>
-                    <div class="footerBut">
-                        <a href="http://www.starsandstripesgc.com/about-us">ABOUT US</a>
-                    </div>
-                    <div class="footerBut">
-                        <a href="http://www.starsandstripesgc.com/contact-us">CONTACT US</a>
-                    </div>
-                    <div class="footerBut">
-                        <a href="https://twitter.com/StarsStripesGC">TWITTER</a>
-                    </div>
+                    <p>
+                            If you have a building project you would like to get started please contact us to get the process started! We are currently working in the greater Kansas City area and Lynn Valley, Kansas area.
+                    </p>
+                    <a href="#">Learn More &rarr;</a>
                 </div>
             </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script type="text/javascript" src="script/index.js"></script>
+            <div id="lawnParalax"></div>
+            <div id="lawnService">
+                <div id="LScontent">
+                    <h1 class="serviceHeader">Lawn Care</h1>
+                    <img id="mowingIcon" src="res/image/mowing/mowingIcon.png" alt="mowingIcon">
+                    <p>
+                            Have a yard that needs taking care of? Contact the experts and we can get your turf growing like a prize lawn! Some of our lawn maintenance services include mowing, edge trimming, core aeration, verticutting, seeding, sodding, fertilizing and patch work. If you are interested in learning more about our lawn care services visit our lawn care page to get the scoop.
+                    </p>
+                    <p>
+                            Most lawns in Kansas City are growing fast from all of the rain we have been getting paired with the perfect growing temperature for seed. This also means weeds need to be controled.
+                    </p>
+                    <a href="#">Learn More &rarr;</a>
+                </div>
+            </div>
+        </section>
+        <div data-include="templates/nav/footer.html"></div>
+        <script type="text/javascript" src="script/headerFooter.js"></script>
+        <script type="text/javascript" src="script/home.js"></script>
     </body>
 </html>
