@@ -19,6 +19,29 @@ function load() {
         $('html, body').animate({scrollTop: $("#services").offset().top - 100}, 600);
     });
 
+    $(document).on('click', '#headerHome', function() {
+        window.location = 'index.html';
+    });
+
+    $(document).on('click', '#headerLandscaping', function() {
+        window.location = '/landscaping';
+    });
+
+    $(document).on('click', '#headerConstruction', function() {
+        window.location = '/construction';
+    });
+
+    $(document).on('click', '#headerLawn', function() {
+        window.location = '/lawn-care';
+    });
+
+    $(document).on('click', '#headerAbout', function() {
+        window.location = '/about';
+    });
+
+    $(document).on('click', '#headerContact', function() {
+        window.location = '/contact';
+    });
+
     window.addEventListener("scroll", scroll, false);
-    
 }

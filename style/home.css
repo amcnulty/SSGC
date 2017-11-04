@@ -225,3 +225,32 @@
     right: 120px;
     width: 400px;
 }
+
+#missionSection {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+}
+
+#missionBox {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5em;
+    font-style: italic;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 4px solid #E0162B;
+    background-color: white;
+}
+
+#missionBox::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #E0162B;
+    left: -14px;
+    top: 8px;
+    z-index: -1;
+}

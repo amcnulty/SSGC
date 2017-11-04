@@ -132,11 +132,10 @@ header {
     cursor: pointer;
 }
 
-.footerBut a {
-    text-decoration: none;
+.footerBut span {
     color: #8EA9A9;
 }
 
-.footerBut a:hover {
+.footerBut span:hover {
     color: white;
 }
