@@ -16,5 +16,23 @@ function load() {
     var templates = document.querySelectorAll("[data-include]");
     loadTemplates(templates, function() {
         console.log("Templates Loaded");
-    })
+    });
+    $(document).on('click', '#headerHome', function() {
+        window.location = 'index.html';
+    });
+    $(document).on('click', '#headerLandscaping', function() {
+        window.location = 'landscaping.html';
+    });
+    $(document).on('click', '#headerConstruction', function() {
+        window.location = 'construction.html';
+    });
+    $(document).on('click', '#headerLawn', function() {
+        window.location = 'lawn-care.html';
+    });
+    $(document).on('click', '#headerAbout', function() {
+        window.location = 'about.html';
+    });
+    $(document).on('click', '#headerContact', function() {
+        window.location = 'contact.html';
+    });
 }
