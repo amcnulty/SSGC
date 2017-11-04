@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="../res/icon/favicon.ico">
+        <title>Construction Services in Kansas City | Stars and Stripes General Contracting</title>
+        <meta name="description" content="Hardscapes, remodels, decks, patios, walkways, new home building, drywall, basements.
+         Stars and Stripes General Contracting is a Kansas City bseed company that works to impprove the property values of homes and businesses.">
+        <meta name="author" content="Aaron Michael McNulty">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="content-language" content="en">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/headerFooter.css">
+        <link rel="stylesheet" type="text/css" href="style/construction.css">
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div data-include="templates/nav/header.html"></div>
+        <section id="landing">
+            <div id="topFade"></div>
+        </section>
+        <div id="mainContent">
+            <div id="services">
+                <div id="title">
+                    Construction
+                    <br>
+                    <b>Services</b>
+                </div>
+                <div id="planting" class="service">
+                    <h1 class="serviceHeader">Planting</h1>
+                    <p>
+                        No landscape is complete without plants. With all of the different varieties of plants every design can be unique!
+                    </p>
+                    <ul>
+                        <li>Annual Flowers</li>
+                        <li>Perennial Flowers</li>
+                        <li>Deciduous Shrubs</li>
+                        <li>Trees</li>
+                        <li>Ground Cover</li>
+                    </ul>
+                    <p>
+                        It is important to pick the right type of plants for your garden. Read this article about choosing the proper plants.
+                    </p>
+                </div>
+            </div>
+            <aside>
+                <div id="bidBox">
+                    <h2>Get A Bid</h2>
+                    <br>
+                    <form id="bidForm">
+                        <label for="bidName">Full Name*</label>
+                        <br>
+                        <input id="bidName" type="text" placeholder="Name">
+                        <br>
+                        <label for="bidEmail">Email Adress*</label>
+                        <br>
+                        <input id="bidEmail" type="email" placeholder="Email">
+                        <br>
+                        <label for="bidPhone">Phone Number*</label>
+                        <br>
+                        <input id="bidPhone" type="text" placeholder="Phone Number">
+                        <br>
+                        <label for="category">Work Requested</label>
+                        <br>
+                        <select name="category" id="category">
+                            <option selected disabled value="0">
+                                Select Category
+                            </option>
+                            <option value="General Landscaping">General Landscaping</option>
+                            <option value="Planting">Planting</option>
+                            <option value="Mulching">Mulching</option>
+                            <option value="Leaf Removal">Leaf Removal</option>
+                            <option value="Drainage Work">Drainage Work</option>
+                        </select>
+                        <br>
+                        <label for="bidSpecial">Special Notes</label>
+                        <br>
+                        <textarea name="bidSpecial" id="bidSpecial" cols="40" rows="10" placeholder="Enter text..."></textarea>
+                        <br>
+                        <input id="bidSubmit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </aside>
+        </div>
+        <div data-include="templates/nav/footer.html"></div>
+        <script type="text/javascript" src="script/headerFooter.js"></script>
+        <script type="text/javascript" src="script/construction.js"></script>
+    </body>
+</html>

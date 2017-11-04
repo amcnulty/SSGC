@@ -20,19 +20,40 @@ function load() {
     $(document).on('click', '#headerHome', function() {
         window.location = 'index.html';
     });
+    $(document).on('click', '#footerHome', function() {
+        window.location = 'index.html';
+    });
     $(document).on('click', '#headerLandscaping', function() {
+        window.location = 'landscaping.html';
+    });
+    $(document).on('click', '#footerLandscaping', function() {
         window.location = 'landscaping.html';
     });
     $(document).on('click', '#headerConstruction', function() {
         window.location = 'construction.html';
     });
+    $(document).on('click', '#footerConstruction', function() {
+        window.location = 'construction.html';
+    });
     $(document).on('click', '#headerLawn', function() {
+        window.location = 'lawn-care.html';
+    });
+    $(document).on('click', '#footerLawn', function() {
         window.location = 'lawn-care.html';
     });
     $(document).on('click', '#headerAbout', function() {
         window.location = 'about.html';
     });
+    $(document).on('click', '#footerAbout', function() {
+        window.location = 'about.html';
+    });
     $(document).on('click', '#headerContact', function() {
         window.location = 'contact.html';
     });
+    $(document).on('click', '#footerContact', function() {
+        window.location = 'contact.html';
+    });
+    $(document).on('click', '#footerTwitter', function() {
+        window.location = 'https://twitter.com/starsstripesgc';
+    })
 }
