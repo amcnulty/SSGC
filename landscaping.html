@@ -58,6 +58,39 @@
             <aside>
                 <div id="bidBox">
                     <h2>Get A Bid</h2>
+                    <br>
+                    <form id="bidForm">
+                        <label for="bidName">Full Name*</label>
+                        <br>
+                        <input id="bidName" type="text" placeholder="Name">
+                        <br>
+                        <label for="bidEmail">Email Adress*</label>
+                        <br>
+                        <input id="bidEmail" type="email" placeholder="Email">
+                        <br>
+                        <label for="bidPhone">Phone Number*</label>
+                        <br>
+                        <input id="bidPhone" type="text" placeholder="Phone Number">
+                        <br>
+                        <label for="category">Work Requested</label>
+                        <br>
+                        <select name="category" id="category">
+                            <option selected disabled value="0">
+                                Select Category
+                            </option>
+                            <option value="General Landscaping">General Landscaping</option>
+                            <option value="Planting">Planting</option>
+                            <option value="Mulching">Mulching</option>
+                            <option value="Leaf Removal">Leaf Removal</option>
+                            <option value="Drainage Work">Drainage Work</option>
+                        </select>
+                        <br>
+                        <label for="bidSpecial">Special Notes</label>
+                        <br>
+                        <textarea name="bidSpecial" id="bidSpecial" cols="40" rows="10" placeholder="Enter text..."></textarea>
+                        <br>
+                        <input id="bidSubmit" type="submit" value="Submit">
+                    </form>
                 </div>
             </aside>
         </div>
