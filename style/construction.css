@@ -109,6 +109,12 @@ input, textarea, select {
     line-height: 1.5em;
 }
 
+.serviceDivider {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid #E0162B;;
+}
+
 aside {
     width: 39%;
     float: left;
