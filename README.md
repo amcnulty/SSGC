@@ -9,4 +9,4 @@ A site for Stars and Stripes General Contracting LLC located in Johnson County, 
 ## Link
 This site is no longer being hosted with a .com address so the only link is for the one here on github pages.
 
-[Stars and Stripes GC](https://amcnulty.github.io/ "Kansas City Construction, Landscaping, and Lawn Care")
+[Stars and Stripes GC](http://amcnulty.github.io/SSGC/ "Kansas City Construction, Landscaping, and Lawn Care")
