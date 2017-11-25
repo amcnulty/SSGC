@@ -102,22 +102,27 @@ body {
 }
 
 #valuesSection {
+    position: relative;
     width: 90%;
-    height: 500px;
     background-color: #E0162B;
     margin-bottom: 80px;
 }
 
+#valuesSection::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
 #labelWrapper {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    width: 50%;
-    height: 100%;
+    bottom: 100px;
+    width: 40%;
 }
 
 #valuesLabel {
     position: relative;
-    top: 300px;
     text-align: center;
     font-size: 3em;
     color: whitesmoke;
@@ -127,10 +132,77 @@ body {
     position: relative;
     top: -14px;
     right: -10px;
-    width: 50%;
-    height: 100%;
+    width: 60%;
     float: right;
     box-sizing: border-box;
     background-color: white;
     border: 4px solid #E0162B;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background-image: none !important;
+    border: 2px solid #E0162B;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.swiper-button-next::before {
+    position: relative;
+    display: inline-block;
+    right: 2.5px;
+    content: '';
+    border: solid #E0162B;
+    border-width: 0px 2px 2px 0px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+}
+
+.swiper-button-prev::before {
+    position: relative;
+    display: inline-block;
+    left: 2.5px;
+    content: '';
+    border: solid #E0162B;
+    border-width: 0px 2px 2px 0px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(135deg);
+}
+
+.count {
+    position: absolute;
+    display: inline-block;
+    top: 70px;
+    left: 70px;
+    margin: 0px;
+    font-size: 3em;
+    color: #E0162B;
+    font-weight: 900;
+}
+
+.descriptionBox {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    padding: 70px 70px 40px 150px;
+    box-sizing: border-box;
+}
+
+.valueName {
+    margin: 0px;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.valueDescription {
+    font-size: 1.3em;
+    line-height: 1.3em;
 }
